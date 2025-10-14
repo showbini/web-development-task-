@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Sign-Up Form Card (W1 + W2)</title>
+    <style>
+        /* Modern Centering (Fulfills W2 Requirement) */
+        :root {
+            --card-width: 350px;
+            --page-bg: #f0f2f5; 
+            --card-bg: #ffffff;
+            --primary-color: #007bff; 
+            --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: var(--page-bg);
+            min-height: 100vh;
+            display: flex; 
+            justify-content: center; /* Horizontal Center */
+            align-items: center; /* Vertical Center */
+        }
+
+        .sign-up-card {
+            width: var(--card-width); /* Fixed Width (W2 Requirement) */
+            max-width: 90%; 
+            background-color: var(--card-bg); /* Background Color (W2 Requirement) */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Form Styling (W1 Enhancement) */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sign-up-card">
+        <h2 class="card-title">User Registration</h2>
+        
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Minimum 8 characters">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Retype password">
+            </div>
+            
+            <button type="submit" class="submit-btn">Register Account</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3: Showcase Page with Styled Links</title>
+    <style>
+        /* CSS Formatting (W3 Requirement) */
+        :root {
+            --primary-text: #2c3e50; 
+            --page-bg: #ecf0f1; 
+            --accent-color: #3498db; 
+            --link-hover-color: #2980b9; 
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--primary-text);
+            background-color: var(--page-bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto; 
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Title (W3 Requirement) */
+        h1 {
+            color: var(--accent-color);
+            text-align: center;
+        }
+
+        /* Image (W3 Requirement) */
+        .showcase-image {
+            display: block;
+            width: 100%;
+            max-width: 450px; 
+            height: auto;
+            margin: 25px auto; /* Centering the image */
+            border-radius: 8px;
+        }
+
+        /* Styled Links (W3 Requirement) */
+        .link-list {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .link-list li {
+            margin-bottom: 10px;
+        }
+
+        .link-list a {
+            display: block;
+            text-decoration: none;
+            color: var(--primary-text);
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border-left: 5px solid var(--accent-color); /* Unique visual element */
+            width: 90%;
+            transition: all 0.3s ease-in-out; /* Smooth hover effect */
+        }
+
+        .link-list a:hover {
+            color: #ffffff; 
+            background-color: var(--link-hover-color); 
+            transform: translateX(5px); /* Moves slightly right on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <h1>Project Resources and Links</h1>
+
+        <p>
+            This page demonstrates the fundamentals of HTML structure and CSS formatting. The layout is clean and centered, and the link styling includes a subtle interactive hover effect to showcase basic CSS transitions.
+        </p>
+
+        <img class="showcase-image" 
+             src="https://via.placeholder.com/450x250?text=Web+Development+Concept" 
+             alt="A graphic symbolizing web development and coding concepts.">
+        
+        <ul class="link-list">
+            <li>
+                <a href="https://github.com/" target="_blank">
+                    🔗 Link 1: My Project Repositories
+                </a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/" target="_blank">
+                    📚 Link 2: Web Standards Reference
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/" target="_blank">
+                    💡 Link 3: Developer Documentation
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
